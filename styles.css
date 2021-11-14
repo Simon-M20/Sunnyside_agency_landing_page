@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+}
+
+header {
+    background-image: url(/images/desktop/image-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
+
+.menu {
+    position: absolute;
+    z-index: 997px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    width: 85%;
+    height: auto;
+    top: 4rem;
+    transform: 
+        translate(-2rem, -2.5rem)
+        scale(0);
+    transform-origin: 100% 0%;
+    transition: all 0.35s ease-in;
+}
+
+.menu ul {
+    flex-direction: column;
+    margin: 10px 0;
+    padding: 0.3rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.menu ul li {
+    margin: 8px 0;
+    padding: 0.5rem 0;
+}
+
+.menu ul li a {
+    color: #000;
+}
+
+.menu ul li a:hover {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
+.menu ul li a.is-active:focus {
+    background-color: hsl(51, 100%, 49%);
+    color: #000;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    padding: 0.75rem 1.75rem;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.menu.open {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0) scale(1);
+}
+
+.menu-btn {
+    position: absolute;
+    right: 1rem;
+    top: 1.25rem;
+}
+
+section article button.amarillo, section article button.rojo {
+    /* border-bottom: 3px solid hsl(51, 100%, 49%); */
+    position: relative;
+    z-index: 10;
+    font-size: 16px;
+    font-family: 'Fraunces', serif;
+}
+
+section article button.amarillo::before {
+    position: absolute;
+    height: 8px;
+    width: 115%;
+    background-color: hsl(51, 100%, 49%);
+    bottom: 8px;
+    content: '';
+    opacity: .28;
+    left: -10px;
+    right: -10px;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+section article button.amarillo:hover:before, section article button.amarillo:focus:before {
+    opacity: .65;
+    background-color: hsl(51, 100%, 49%);
+}
+
+section article button.rojo::before {
+    position: absolute;
+    height: 8px;
+    width: 115%;
+    background-color: hsl(7, 99%, 70%);
+    bottom: 8px;
+    content: '';
+    opacity: .28;
+    left: -10px;
+    right: -10px;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+section article button.rojo:hover:before, section article button.rojo:focus:before {
+    opacity: .85;
+    background-color: hsl(7, 99%, 70%);
+}
+
+footer figure figcaption ul li a {
+    color: #539686;
+}
+
+footer figure figcaption ul li a:hover {
+    color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+    .menu {
+        width: 40%;
+        visibility: visible;
+        opacity: 1;
+        position: relative;
+        top: 0;
+        background-color: transparent;
+        transform: translate(0) scale(1);
+    }
+
+    .menu-btn {
+        display: none;
+        visibility: hidden;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu ul li a {
+        color: #fff;
+    }
+
+    /* .menu ul li a:hover {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+    } */
+    
+    .menu ul li a.is-active:focus {
+        background-color: #fff;
+        color: #000;
+        text-transform: uppercase;
+        font-family: 'Fraunces', serif;
+        padding: 0.75rem 1.75rem;
+        font-size: 16px;
+        font-weight: 900;
+    }
+}
+

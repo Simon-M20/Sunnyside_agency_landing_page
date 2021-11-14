@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunnyside Agency Landing Page Frontend Mentor Challenge</title>
+    <link rel="icon" type="image/icon" href="images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Tailwind CSS CDN -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Hamburguer CSS -->
+    <link href="dist/hamburgers.css" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="h-screen">
+        <section class="flex flex-wrap justify-between items-center p-5 leading-relaxed relative">
+            <div class="w-1/4 flex justify-start">
+                <img class="py-2 " src="images/logo.svg" alt="Sunnyside’s Logo">
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="mx-2"><a class="px-7 text-white hover:text-black rounded-full py-3 tracking-wide is-active text-lg hover:bg-white" href="#">About</a></li>
+                    <li class="mx-2"><a class="px-7 text-white hover:text-black rounded-full py-3 tracking-wide is-active text-lg hover:bg-white" href="#">Services</a></li>
+                    <li class="mx-2"><a class="px-7 text-white hover:text-black rounded-full py-3 tracking-wide is-active text-lg hover:bg-white" href="#">Projects</a></li>
+                    <li class="mx-2"><a class="px-7 text-white hover:text-black rounded-full py-3 tracking-wide text-lg hover:bg-white is-active" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <button class="hamburger hamburger--emphatic menu-btn" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    
+        <article class="flex items-center justify-center flex-col uppercase w-full mt-6 mx-auto md:mt-24">
+            <h1 class="tracking-widest text-5xl md:text-6xl text-center text-white md:px-4 lg:p-0" style="font-family: 'Fraunces', serif; font-weight: 900;">We are creatives</h1>
+            <img class="py-4 mt-4 lg:mt-8" src="images/icon-arrow-down.svg" alt="icon-arrow-down">
+        </article>
+    </header>
+
+    <main>
+        <section class="flex flex-wrap-reverse justify-center items-center">
+            <article class="lg:w-1/2 w-full px-6 py-16 md:p-20 lg:py-16 lg:px-20 bg-white text-center md:text-left">
+                <h2 class="text-3xl flex flex-col" style="font-family: 'Fraunces', serif; font-weight: 900;">Transform your <span>brand</span></h2>
+                <p class="leading-relaxed py-4 my-3 text-gray-500"> We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+                </p>
+                <button class="uppercase py-2 amarillo tracking-wide" style="font-family: 'Fraunces', serif; font-weight: 900;">Learn More</button>
+    
+            </article>
+            <article class="lg:w-1/2">
+                <img src="images/desktop/image-transform.jpg" alt="Egg image">
+            </article>
+        </section>
+
+        <section class="flex flex-wrap justify-center items-center">
+            <article class="lg:w-1/2">
+                <img src="images/desktop/image-stand-out.jpg" alt="Strawberry glass">
+            </article>
+            <article class="lg:w-1/2 w-full px-6 py-16 md:p-20 lg:py-16 lg:px-20 bg-white text-center md:text-left">
+                <h2 class="text-3xl flex flex-col" style="font-family: 'Fraunces', serif; font-weight: 900;">Stand out to the right<span>audience</span></h2>
+                <p class="leading-relaxed py-4 my-3 text-gray-500">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+                </p>
+                <button class="uppercase py-2 rojo tracking-wide" style="font-family: 'Fraunces', serif; font-weight: 900;">Learn More</button>
+    
+            </article>
+        </section>
+
+        <section class="flex flex-wrap justify-center items-center">
+            <figure class="lg:w-1/2 w-full h-auto relative flex justify-center items-center">
+                <img class="relative h-screen md:h-auto z-0" src="images/desktop/image-graphic-design.jpg" alt="Cherry Image">
+                <figcaption class="absolute flex justify-center items-center md:w-1/2 w-4/5 mx-auto bg-white z-20">
+                    <h2 class="absolute md:top-28 top-14 text-3xl" style="font-family: 'Fraunces', serif; font-weight: 900; color: hsl(167, 40%, 24%);">Graphic design</h2>
+                    <p class="text-center absolute top-28 md:top-44 leading-relaxed" style="color: hsl(167, 40%, 24%);">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+                </figcaption>
+            </figure>
+            <figure class="lg:w-1/2 relative flex justify-center items-center">
+                <img class="relative h-screen md:h-auto" src="images/desktop/image-photography.jpg" alt="Orange image">
+                <figcaption class="absolute flex justify-center items-center md:w-1/2 w-4/5 mx-auto bg-white z-20">
+                    <h2 class="absolute md:top-28 top-14 text-3xl" style="font-family: 'Fraunces', serif; font-weight: 900; color: hsl(198, 62%, 26%);">Photography</h2>
+                    <p class="text-center absolute top-28 md:top-44 leading-relaxed" style="color: hsl(198, 62%, 26%);">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                </figcaption>
+            </figure>
+        </section>
+    
+        <section class="bg-white md:p-16 py-16 px-4">
+            <h2 class="text-xl flex justify-center items-center uppercase text-center text-gray-400 my-12" style="font-family: 'Fraunces', serif; font-weight: 900; letter-spacing: 5px;">Client testimonials</h2>
+            <article class="flex flex-wrap mx-auto w-4/5 justify-center items-center mb-6">
+                <div class="lg:w-1/4 mx-6 my-8 lg:my-0">
+                    <figure class="flex flex-col justify-center items-center">
+                        <img class="rounded-full w-1/5 mb-6" src="images/image-emily.jpg" alt="Emily R">
+                        <figcaption class="text-center leading-relaxed">
+                            <p class="my-4 pb-8" style="color: hsl(213, 9%, 39%);">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                            <span class="mt-7 pt-6" style="font-family: 'Fraunces', serif; font-weight: 900;">Emily R.</span><br>
+                            <small class="text-gray-700 opacity-40">Marketing Director</small>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="lg:w-1/4 mx-6 my-8 lg:my-0">
+                    <figure class="flex flex-col justify-center items-center">
+                        <img class="rounded-full w-1/5 mb-6" src="images/image-thomas.jpg" alt="Thomas S">
+                        <figcaption class="text-center leading-relaxed">
+                            <p class="my-4 pb-8" style="color: hsl(213, 9%, 39%);">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                            <span class="mt-7 pt-6" style="font-family: 'Fraunces', serif; font-weight: 900;">Thomas S.</span><br>
+                            <small class="text-gray-700 opacity-40">Chief Operating Officer</small>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="lg:w-1/4 mx-6 my-8 lg:my-0">
+                    <figure class="flex flex-col justify-center items-center">
+                        <img class="rounded-full w-1/5 mb-6" src="images/image-jennie.jpg" alt="Jennie F">
+                        <figcaption class="text-center leading-relaxed">
+                            <p class="my-4 pb-8" style="color: hsl(213, 9%, 39%);">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                            <span class="mt-7 pt-6" style="font-family: 'Fraunces', serif; font-weight: 900;">Jennie F.</span><br>
+                            <small class="text-gray-700 opacity-40">Business Owner</small>
+                        </figcaption>
+                    </figure>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <section class="flex justify-center items-center flex-wrap">
+        <img class="lg:w-1/4 w-1/2" src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk Bottles">
+        <img class="lg:w-1/4 w-1/2" src="images/desktop/image-gallery-orange.jpg" alt="Orange image">
+        <img class="lg:w-1/4 w-1/2" src="images/desktop/image-gallery-cone.jpg" alt="Ice Cream Cone">
+        <img class="lg:w-1/4 w-1/2" src="images/desktop/image-gallery-sugarcubes.jpg" alt="Sugarcubes Image">
+    </section>
+
+    <footer class="p-16" style="background-color: #90d4c5;">
+        <figure class="flex flex-col justify-center items-center my-2">
+            <img class="pb-5" src="images/logo-footer.svg" alt="Sunnyside’s Logo">
+            <figcaption class="flex justify-center items-center">
+                <ul class="flex justify-evenly">
+                    <li class="mx-2"><a class="mx-5" href="#">About</a></li>
+                    <li class="mx-2"><a class="mx-5" href="#">Services</a></li>
+                    <li class="mx-2"><a class="mx-5" href="#">Projects</a></li>
+                </ul>
+            </figcaption>
+        </figure>
+        <figure class="flex justify-center items-center mt-16">
+            <img class="mx-3 cursor-pointer" src="images/icon-facebook.svg" alt="icon-facebook">
+            <img class="mx-3 cursor-pointer" src="images/icon-instagram.svg" alt="icon-instagram">
+            <img class="mx-3 cursor-pointer" src="images/icon-twitter.svg" alt="icon-twitter">
+            <img class="mx-3 cursor-pointer" src="images/icon-pinterest.svg" alt="icon-pinterest">
+        </figure>
+    </footer>
+
+    <script src="Js/app.js"></script>
+
+</body>
+</html>
